@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App'
+import '../assets/style.css'
 
 ReactDOM.render(
-    <h1>Hello Niga</h1>,
+    <App />,
   document.getElementById('root')
 );
