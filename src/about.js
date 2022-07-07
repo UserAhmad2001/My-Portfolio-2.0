@@ -2,9 +2,32 @@ import React from "react";
 
 export default function(){
 
+    function anim(e) {
+        e.target.style.animation = " letter-anim .5s linear forwards";
+        e.target.style.color = " #34ffff";
+    
+        const t = setTimeout(() => {
+          e.target.style.animation -= " letter-anim .5s linear forwards";
+          e.target.style.color = " white";
+          clearTimeout(t);
+        }, 500);
+      }
+    function lettering(string){
+        var a = []
+        for(var i=0; i<string.length; i++){
+          a.push(<span key={Math.random()} onMouseOver={anim}>{string[i]}</span>);
+        }
+        return a;
+      }
+
     return (
         <div className="about-section">
-            <h1>My, Myself & I</h1>
+            <h1>
+                {lettering("Me, ")} <span> </span> 
+                {lettering(" Myself")} <span> </span> 
+                {lettering("  &")} <span> </span> 
+                {lettering("  I")}  
+            </h1>
             <p>I’m a Front-End Developer located in Poland.
                 I have a serious passion for UI effects, animations 
                 and creating intuitive, dynamic user experiences.

@@ -1,32 +1,77 @@
 import React from "react";
 
-export default function(){
+export default function () {
+  function load() {
+    const l = document.querySelector(".loading");
+    document.querySelector(".root").childNodes.forEach((child) => {
+      if (child !== document.querySelector(".background-section")) {
+        child.style.display = "none";
+      }
+    });
+    l.style.display = "flex";
+    l.style.transform = "translateX(100%)";
+    const timeout2 = setTimeout(() => {
+      l.style.display = "none";
+      l.style.transform = "translateX(-100%)";
+      clearTimeout(timeout2);
+    }, 2000);
+  }
 
-    return (
-        <div className="background-section">
+  function navClick(e) {
+    load();
+    const el = e.target.innerHTML.toLowerCase();
+    switch (el) {
+      case "home":
+        document.querySelector(".home-section").style.display = "block";
+        break;
 
-            <nav className="navbar">
+      case "skills":
+        document.querySelector(".skills-section").style.display = "flex";
+        break;
 
-                <div className="home-logo">
-                    <img className="logo" src="" alt="" />
-                    <h1>Ahmad <br /> <p>web developer</p></h1>
-                </div>
+      case "works":
+        document.querySelector(".works-section").style.display = "grid";
+        break;
 
-                <div className="nav-sections">
-                    <span>HOME</span>
-                    <span>SKILLS</span>
-                    <span>WORKS</span>
-                    <span>ABOUT</span>
-                    <span>CONTACT</span>
-                </div>
+      case "about":
+        document.querySelector(".about-section").style.display = "block";
+        break;
 
-                <div className="social">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-discord"></i>
-                </div>
-            </nav>
-            
+      case "contact":
+        document.querySelector(".contact-section").style.display = "flex";
+        break;
+    }
+  }
+
+  return (
+    <div className="background-section">
+      <nav className="navbar">
+        <div className="home-logo">
+          <img className="logo" src="" alt="" />
+          <h1>
+            Ahmad <br /> <p>web developer</p>
+          </h1>
         </div>
-    )
+
+        <div className="nav-sections">
+          <span onClick={navClick}>HOME</span>
+          <span onClick={navClick}>SKILLS</span>
+          <span onClick={navClick}>WORKS</span>
+          <span onClick={navClick}>ABOUT</span>
+          <span onClick={navClick}>CONTACT</span>
+        </div>
+
+        <div className="social">
+          <i className="fa-brands fa-linkedin-in"></i>
+          <i className="fa-brands fa-github"></i>
+          <i className="fa-brands fa-discord"></i>
+        </div>
+      </nav>
+
+      <div className="loading">
+        <img src="" alt="" />
+        <p>Loading....</p>
+      </div>
+    </div>
+  );
 }

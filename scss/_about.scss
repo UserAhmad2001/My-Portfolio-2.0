@@ -1,3 +1,30 @@
 .about-section{
     display: none;
+    box-sizing: border-box;
+    margin: 3rem 0 0 3rem;
+
+
+
+    h1{
+        font-size: 5rem;
+        span{
+            cursor: default;
+            display: inline-block;
+        }
+    }
+    p:first-child{
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    p:last-child{
+        font-size: 1.3rem;
+        cursor: pointer;
+        color: $blue-txt;
+        
+        &:hover{
+            filter: brightness(.5);
+        }
+    }
+
+    
 }

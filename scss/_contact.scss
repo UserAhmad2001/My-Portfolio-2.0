@@ -1,0 +1,56 @@
+.contact-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    
+    
+    .form{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 3rem;
+
+        h1{
+            font-size: 5rem;
+            margin: 0;
+            span{
+                display: inline-block;
+                cursor: default;
+            }
+        }
+
+    input,textarea,button{
+        display: block;
+        box-sizing: border-box;
+        border-radius: .3rem;
+        margin-bottom: 1rem;
+        padding: 1rem 3rem;
+        font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .send-btn{
+        background: rgb(17, 160, 255);
+        color: white;
+        cursor: pointer;
+        &:hover,:focus{
+            filter: brightness(1.1);
+        }
+        &:active{
+            filter: brightness(.9);
+        }
+    }
+
+}
+
+#map{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+}

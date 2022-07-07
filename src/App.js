@@ -3,6 +3,7 @@ import Home from './home'
 import About from './about'
 import Skills from './skills'
 import Works from './works'
+import Contact from './Contact'
 import Background from './background'
 
 export default function(){
@@ -12,13 +13,10 @@ export default function(){
             <Home />
             <About />
             <Skills />
-            <Background />
             <Works />
-            
-            <div className="loading">
-                <img src="" alt="" />
-                <p>Loading....</p>
-            </div>
+            <Contact />
+            <Background />
+
         </div>
     )
 }

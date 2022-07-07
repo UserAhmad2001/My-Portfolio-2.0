@@ -1,8 +1,68 @@
+
 .root{
-
-
+    box-sizing: border-box;
 
     .home-section{
-        
+        box-sizing: border-box;
+
+        .home-txt{
+            display: flex;
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 3rem 0 0 3rem;
+
+            h1{
+                font-size: 5rem;
+                margin: 0;
+                flex-basis: 100%;
+                cursor: default;
+                span{
+                    display: inline-block;
+                    transform-origin: center;
+                    transition: color .5s ease;
+                    &:hover{
+                        color: $blue-txt;
+                    }
+                }
+            }
+
+            p{
+                font-size: 1.3rem;
+            }
+
+            .home-contact{
+                font-size: 1.5rem;
+                display: inline;
+                position: relative;
+                transition: color .3s ease;
+                cursor: pointer;
+                color: $blue-txt;
+                
+                &:hover{
+                    filter: brightness(.6);
+                }
+                
+            }
+        }
+
+
+        @media screen and (max-width:823px) {
+            .home-txt{
+                margin: 3rem;
+                h1{
+                    span{
+                        display: inline;
+                        font-size: 4rem;
+                        
+                    }
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
     }
+
 }

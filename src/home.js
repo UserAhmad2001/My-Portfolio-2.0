@@ -2,16 +2,35 @@ import React from "react";
 
 export default function(){
 
+    function anim(e){
+        e.target.style.animation = " letter-anim .5s linear forwards"
+        e.target.style.color = " #34ffff"
+
+        const t= setTimeout(() => {
+            e.target.style.animation -= " letter-anim .5s linear forwards"
+            e.target.style.color = " white"
+            clearTimeout(t)
+        }, 500);
+    }
+    function lettering(string){
+        var a = []
+        for(var i=0; i<string.length; i++){
+            a.push(<span key={Math.random()} onMouseOver={anim}>{string[i]}</span>);
+        }
+        return a;
+    }
+
     return (
         <div className="home-section">
             <div className="home-txt">
                 <h1>
-                    Hi, <br />
-                    I'm Ahmad, <br />
-                    Web developer
+                    {lettering("Hi,")} <br />
+                    {lettering("I'm Ahmad,")} <br />
+                    {lettering("Web developer.")} 
                 </h1>
-                <p>Front End Developer </p>
-                <p>Contact me!</p>
+                
+                <p>Front End Engineer / Web Designer</p>
+                <p className="home-contact">Contact me!</p>
             </div>
         </div>
     )
