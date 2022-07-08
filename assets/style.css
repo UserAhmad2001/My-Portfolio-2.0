@@ -175,6 +175,7 @@
 }
 .skills-section .skills-txt p:last-child {
   color: #34ffff;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 .skills-section .skills-txt p:last-child:hover {
@@ -185,7 +186,7 @@
   height: 100%;
 }
 .skills-section .sphere .tagcloud {
-  font-family: "Courier New", Courier, monospace;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   font-weight: 650;
   margin: auto;
@@ -210,7 +211,7 @@
 }
 .about-section p:first-child {
   font-size: 1.3rem;
-  width: 50%;
+  max-width: 50vh;
 }
 .about-section p:last-child {
   font-size: 1.3rem;
@@ -225,14 +226,8 @@
   display: none;
 }
 
-@media screen and (max-width: 823px) {
-  .works-section {
-    display: block;
-    margin: 10rem 3rem 0 3rem;
-  }
-}
 .contact-section {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
@@ -241,10 +236,10 @@
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 3rem;
+  margin: 0 3rem 0 3rem;
 }
 .contact-section .form h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0;
 }
 .contact-section .form h1 span {
@@ -256,7 +251,9 @@
   box-sizing: border-box;
   border-radius: 0.3rem;
   margin-bottom: 1rem;
-  padding: 1rem 3rem;
+  padding: 1rem 0;
+  width: 100%;
+  text-indent: 2rem;
   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
@@ -272,9 +269,8 @@
 .contact-section .form .send-btn:active {
   filter: brightness(0.9);
 }
-.contact-section #map {
-  height: 100%;
-  width: 100%;
+.contact-section #map iframe {
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,6 +282,20 @@
   }
   .home-txt p {
     font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1274px) {
+  .skills-section {
+    flex-direction: column;
+  }
+  .skills-section p {
+    padding-right: 9rem;
+  }
+}
+@media screen and (max-width: 823px) {
+  .works-section {
+    display: block;
+    margin: 10rem 3rem 0 3rem;
   }
 }
 @media screen and (max-width: 823px) {
@@ -320,6 +330,7 @@
 @media screen and (max-width: 823px) {
   .root {
     flex-direction: column;
+    align-items: center;
   }
   .root .background-section .navbar {
     flex-direction: row;
@@ -339,10 +350,25 @@
     display: none;
   }
 }
+@media screen and (max-width: 1329px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-section #map {
+    margin-left: 5rem;
+  }
+}
 @media screen and (max-width: 823px) {
   .contact-section {
     display: block;
-    margin: 10rem 0 0 3rem;
+    margin: 10rem 0 0 0;
+  }
+  .contact-section .form {
+    margin: 0 3rem 0 3rem;
+    box-sizing: border-box;
+  }
+  .contact-section #map {
+    margin: 0;
   }
 }
 @keyframes letter-anim {

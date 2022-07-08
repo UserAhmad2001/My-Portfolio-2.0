@@ -31,7 +31,7 @@ export default function () {
   var options = {
 
     // radius in px
-    radius: 200,
+    radius: 300,
   
     // animation speed
     // slow, normal, fast

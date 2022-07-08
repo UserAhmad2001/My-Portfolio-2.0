@@ -5,21 +5,25 @@ export default function(){
     return (
         <div className="works-section">
             <div className="projects">
-                <span>
-                    <img src="" alt="" />
-                </span>
+                <div className="project">
+                    <img src="../assets/client-1.jpg" alt="project image" />
+                    <span><i className="fa-solid fa-eye"></i></span>
+                </div>
                 
-                <span>
-                    <img src="" alt="" />
-                </span>
+                <div className="project">
+                    <img src="../assets/client-1.jpg" alt="project image" />
+                    <span><i className="fa-solid fa-eye"></i></span>
+                </div>
                 
-                <span>
-                    <img src="" alt="" />
-                </span>
+                <div className="project">
+                    <img src="../assets/client-1.jpg" alt="project image" />
+                    <span><i className="fa-solid fa-eye"></i></span>
+                </div>
                 
-                <span>
-                    <img src="" alt="" />
-                </span>
+                <div className="project">
+                    <img src="../assets/client-1.jpg" alt="project image" />
+                    <span><i className="fa-solid fa-eye"></i></span>
+                </div>
                 
             </div>
         </div>

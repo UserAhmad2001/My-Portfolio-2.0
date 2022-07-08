@@ -1,5 +1,5 @@
 .contact-section{
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     box-sizing: border-box;
@@ -9,10 +9,10 @@
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
-        margin: 0 0 0 3rem;
+        margin: 0 3rem 0 3rem;
 
         h1{
-            font-size: 5rem;
+            font-size: 4rem;
             margin: 0;
             span{
                 display: inline-block;
@@ -25,7 +25,9 @@
         box-sizing: border-box;
         border-radius: .3rem;
         margin-bottom: 1rem;
-        padding: 1rem 3rem;
+        padding: 1rem 0;
+        width: 100%;
+        text-indent: 2rem;
         font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: bold;
         font-size: 1.3rem;
@@ -46,11 +48,12 @@
 }
 
 #map{
-    height: 100%;
-    width: 100%;
+    iframe{
+        margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    }
 }
 
 }
