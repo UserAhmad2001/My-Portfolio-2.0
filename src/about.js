@@ -38,7 +38,7 @@ export default function(){
                 <br></br>
                 Interested in the entire frontend spectrum and working on ambitious
                 projects with positive people.</p>
-            <p>Download Resume</p>
+            <a href="../assets/downloadable.pdf" download={"Ahmad mana's Resume.pdf"}>Download Resume</a>
         </div>
     )
 }

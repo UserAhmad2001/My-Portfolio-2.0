@@ -1,143 +1,171 @@
-
-    @media screen and (max-width:823px) {
-    .home-txt{
-        h1{
-            font-size: 4rem;
-        }
-        p{
-            font-size: 1.3rem;
-        }
+@media screen and (max-width: 823px) {
+  .home-txt {
+    h1 {
+      font-size: 4rem;
     }
+    p {
+      font-size: 1.3rem;
+    }
+  }
 }
 
-
-@media screen and (max-width:1274px) {
-    .skills-section{
-        flex-direction: column;
-        p{
-            padding-right: 9rem;
-        }
+@media screen and (max-width: 1274px) {
+  .skills-section {
+    flex-direction: column;
+    p {
+      padding-right: 9rem;
     }
-    }
-
-    @media screen and (max-width:823px) {
-        .works-section{
-            display: block;
-            margin: 10rem 3rem 0 3rem;
-    
-        }
-    }
-
-@media screen and (max-width:823px) {
-    .skills-section{
-        display: block;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 10rem 0 0 3rem;
-
-        .skills-txt{
-            h1{
-                font-size: 4rem;
-            }
-            p{
-                font-size: 1.3rem;
-                padding-right: 5rem;
-            }
-        }
-
-        .sphere{
-            .tagcloud{
-                margin: 0;
-
-            }
-        }
-        
-    }
+  }
 }
 
+@media screen and (max-width: 823px) {
+  .skills-section {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10rem 0 0 3rem;
 
-@media screen and (max-width:823px) {
-    .about-section{
-        margin: 10rem 0 0 3rem;
-
-        h1{
-            font-size: 3rem;
-        }
-        p{
-            font-size: 1.3rem;
-        }
-
+    .skills-txt {
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.3rem;
+        padding-right: 5rem;
+      }
     }
+
+    .sphere {
+      .tagcloud {
+        margin: 0;
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 823px) {
+  .about-section {
+    margin: 10rem 0 0 3rem;
 
-
-
-@media screen and (max-width:823px) {
-    .root{
-        flex-direction: column;
-        align-items: center;
-        .background-section{
-            .navbar{
-                flex-direction: row;
-                height: 13vh;
-                width: 100vh;
-                .home-logo{
-                    h1{
-                        margin: 2rem 0 0 0;
-                    }
-                }
-            }
-        }
+    h1 {
+      font-size: 3rem;
     }
-
-    .nav-sections{
-        display: none;
+    p {
+      font-size: 1.3rem;
     }
-    .home-logo{
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .root {
+    flex-direction: column;
+    align-items: center;
+    .background-section {
+      display: block;
+      min-width: 100vh;
+
+      .navbar {
         flex-direction: row;
-    }
-    .social{
-        display: none;
-    }
-}
+        height: 13vh;
+        width: 100%;
+        .home-logo {
+          flex-direction: row;
+          margin: .1rem 4rem;
 
+          img{
+            
+            width: 30%;
+          }
 
-@media screen and (max-width:1329px) {
-    .contact-section{
-        flex-direction: column;
-        #map{
-            margin-left: 5rem;
+          h1 {
+            margin: 2rem 0 0 0;
+          }
         }
+      }
     }
+  }
+
+  .nav-sections {
+    display: none;
+  }
+  .home-logo {
+    flex-direction: row;
+  }
+  .social {
+    display: none;
+  }
 }
 
-@media screen and (max-width:823px) {
-    .contact-section{
+@media screen and (max-width: 1329px) {
+  .contact-section {
+    flex-direction: column;
+    #map {
+      margin-left: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .contact-section {
+    display: block;
+    margin: 10rem 0 0 0;
+
+    .form {
+      margin: 0 3rem 0 3rem;
+      box-sizing: border-box;
+    }
+    
+    #map {
+      margin: 0;
+    }
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 962px) {
+    .works-section {
+      .projects {
+        grid-template-columns: repeat(2, minmax(33vh, 1fr));
+        
+        .project {
+          height: 33vh !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 823px)  {
+      .works-section {
         display: block;
-        margin: 10rem 0 0 0;
-
-        .form{
-            margin: 0 3rem 0 3rem;
-            box-sizing: border-box;
+        margin: 10rem 3rem 0 3rem;
+    
+        .projects {
+          grid-template-columns: repeat(3, minmax(33vh, 1fr));
+    
+          .project {
+            height: 33vh !important;
+          }
         }
-
-        #map{
-            margin: 0;
-        }
+      }
     }
 }
+
+
+
 
 
 @keyframes letter-anim {
-    0%{
-        transform: scale(1.1 , .9);
-    }
-    75%{
-        transform: scale(1.2 , .8);
-        color: $blue-txt;
-    }
-    100%{
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(1.2, 0.8);
+    color: $blue-txt;
+  }
+  100% {
+    transform: scale(1);
+  }
 }

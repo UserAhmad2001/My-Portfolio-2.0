@@ -47,7 +47,7 @@ export default function () {
     <div className="background-section">
       <nav className="navbar">
         <div className="home-logo">
-          <img className="logo" src="" alt="" />
+          <img className="logo" src='../assets/dark_logo.svg' alt="my logo" />
           <h1>
             Ahmad <br /> <p>web developer</p>
           </h1>

@@ -19,6 +19,9 @@ export default function(){
         }
         return a;
     }
+    function toggleContactSection(){
+        document.querySelector('.contact-section').click()
+    }
 
     return (
         <div className="home-section">
@@ -30,7 +33,7 @@ export default function(){
                 </h1>
                 
                 <p>Front End Engineer / Web Designer</p>
-                <p className="home-contact">Contact me!</p>
+                <p className="home-contact" onClick={toggleContactSection}>Contact me!</p>
             </div>
         </div>
     )

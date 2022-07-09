@@ -19,7 +19,8 @@
     p:first-child{
         padding-right: 2rem;
     }
-    p:last-child{
+    a{
+        text-decoration: none;
         color: $blue-txt;
         font-size: 1.3rem;
         cursor: pointer;

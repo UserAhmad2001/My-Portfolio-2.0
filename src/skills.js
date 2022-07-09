@@ -80,7 +80,7 @@ export default function () {
         open-source CMS like (WordPress, Drupal, Magento, Keystone.js and
         others) .
       </p>
-      <p>Download Resume</p>
+      <a href="../assets/downloadable.pdf" download={"Ahmad mana's Resume.pdf"}>Download Resume</a>
       </div>
       
 
